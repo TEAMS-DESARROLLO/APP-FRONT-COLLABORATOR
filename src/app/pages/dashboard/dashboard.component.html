@@ -1,0 +1,62 @@
+<div class="d-flex" id="wrapper">
+
+
+  <!-- Sidebar -->
+  <div id="sidebar-wrapper" class="border-end bg-light">
+    <div class="sidebar-heading border-bottom bg-primary text-white" >
+      <div class="logo-container">
+        <span class="logo">Dnetwork</span>
+      </div>
+
+    </div>
+    <div class="list-group list-group-flush">
+      <a href="#" class="list-group-item list-group-item-action list-group-item-light p-3">Inicio</a>
+      <a href="#" class="list-group-item list-group-item-action list-group-item-light p-3">Cursos asignados</a>
+      <a href="#" class="list-group-item list-group-item-action list-group-item-light p-3">Mapeo capacidades</a>
+      <a href="#" class="list-group-item list-group-item-action list-group-item-light p-3">Ayuda</a>
+    </div>
+  </div>
+  <!-- /#sidebar-wrapper -->
+
+  <!-- Page Content -->
+  <div id="page-content-wrapper">
+
+    <!-- Toolbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+      <div class="container-fluid">
+        <!-- <button class="btn btn-primary" id="sidebarToggle" (click)="toggleSidebar()">Toggle Menu</button> -->
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Perfil</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Cerrar Sesión</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container-fluid mt-4">
+      <h1 class="mt-4">Contenido Principal</h1>
+      <p>Aquí va el contenido del centro...</p>
+
+      <!-- router outlet children -->
+      <router-outlet></router-outlet>
+
+
+    </div>
+  </div>
+  <!-- /#page-content-wrapper -->
+
+</div>
+
