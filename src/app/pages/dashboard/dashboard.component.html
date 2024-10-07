@@ -10,10 +10,10 @@
 
     </div>
     <div class="list-group list-group-flush">
-      <a href="#" class="list-group-item list-group-item-action list-group-item-light p-3">Inicio</a>
-      <a href="#" class="list-group-item list-group-item-action list-group-item-light p-3">Cursos asignados</a>
-      <a href="#" class="list-group-item list-group-item-action list-group-item-light p-3">Mapeo capacidades</a>
-      <a href="#" class="list-group-item list-group-item-action list-group-item-light p-3">Ayuda</a>
+      <a routerLink="/dashboard/home" routerLinkActive="router-link-active"  class="list-group-item list-group-item-action list-group-item-light p-3">Inicio</a>
+      <a routerLink="/dashboard/cursos-asignados" class="list-group-item list-group-item-action list-group-item-light p-3">Cursos asignados</a>
+      <a class="list-group-item list-group-item-action list-group-item-light p-3">Mapeo capacidades</a>
+      <a class="list-group-item list-group-item-action list-group-item-light p-3">Ayuda</a>
     </div>
   </div>
   <!-- /#sidebar-wrapper -->
@@ -46,10 +46,9 @@
     </nav>
 
     <!-- Main Content -->
-    <div class="container-fluid mt-4">
+    <div class="container container-right container-left container-bottom">
       <h1 class="mt-4">Contenido Principal</h1>
-      <p>Aquí va el contenido del centro...</p>
-
+      
       <!-- router outlet children -->
       <router-outlet></router-outlet>
 

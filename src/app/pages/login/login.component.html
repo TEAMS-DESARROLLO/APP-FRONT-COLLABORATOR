@@ -1,18 +1,12 @@
-<div class="container mt-5">
-  <div class="row justify-content-center">
-    <div class="col-md-4">
-      <h3 class="text-center">Login</h3>
-      <form>
-        <div class="mb-3">
-          <label for="email" class="form-label">Email address</label>
-          <input type="email" class="form-control" id="email" [(ngModel)]="email" name="email" required>
-        </div>
-        <div class="mb-3">
-          <label for="password" class="form-label">Password</label>
-          <input type="password" class="form-control" id="password" [(ngModel)]="password" name="password" required>
-        </div>
-        <button type="submit" class="btn btn-primary w-100" (click)="redirect()" >Login</button>
-      </form>
+
+
+  <div class="wrapper fadeInDown">
+    <div id="formContent">
+      <h2 class="active"> Inicio Sesion </h2>
+        <form  [formGroup]="form">
+          <input type="text" id="username" formControlName="username"  class="fadeIn second"  placeholder="Ingrese el usuario">
+          <input type="password" id="password" formControlName="password" class="fadeIn third"  placeholder="Ingrese la clave">
+          <button type="submit" id="button" class="fadeIn fourth"  (click)="login()">Login</button>
+        </form>
     </div>
   </div>
-</div>
