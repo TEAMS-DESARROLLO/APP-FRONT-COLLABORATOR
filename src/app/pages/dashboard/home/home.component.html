@@ -1,0 +1,12 @@
+<nav class="navbar navbar-light justify-content-end">
+    <form [formGroup]="customerForm" (keydown.enter)="$event.preventDefault()" class="form-inline">
+        <app-input-search [_formControl]="searchForm"></app-input-search>
+    </form>
+</nav>
+
+
+      @for (item of arrayDatos; track item) {
+        <div class="card-container col-xl-3" style="display: inline-block;">
+            <app-card-component [_data]="item"></app-card-component>
+        </div>
+      }

@@ -3,7 +3,7 @@ import { Routes } from '@angular/router';
 export const routes: Routes = [
   {
     path: '',
-    loadComponent: () => import('./app.component').then((m) => m.AppComponent),
+    loadComponent: () => import('./app.component'),
 
     children: [
       {
@@ -13,14 +13,21 @@ export const routes: Routes = [
       {
         path: 'dashboard',
         loadComponent: () => import('./pages/dashboard/dashboard.component'),
-        // children: [
-        //   {
+         children: [
+          {
+            path: 'home', 
+            loadComponent: () => import('./pages/dashboard/home/home.component'),
+          },
+          {
+            path: 'cursos-asignados', 
+            loadComponent: () => import('./pages/dashboard/cursos-asignados/cursos-asignados.component'),
+          }]
 
         //   }
         // ],
       },
       {
-        path: '**',
+        path: '',
         redirectTo: 'login',
         pathMatch: 'full',
       },
